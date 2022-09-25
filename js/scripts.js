@@ -1,7 +1,5 @@
 
 
-var rellax = new Rellax('.rellax');
-
 // below is video logo funtionality
 
 const vidcont = document.getElementById('vidcontainer');

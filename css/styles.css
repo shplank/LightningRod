@@ -508,11 +508,16 @@ ul {
 .credits {
   padding: 0 12px 0 0;
   color: var(--secondary-color);
+  margin-right: 20px;
 }
 
-.credits td {
-  max-height: 80px;
-  padding: 8px 16px;
+.credits table {
+  margin-right: 24px;
+}
+
+.credits tr td {
+  max-height: 20px;
+  padding: 8px 20px 8px 0;
 }
 
 .reviews {
