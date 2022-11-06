@@ -1,5 +1,4 @@
 
-
 // below is video logo funtionality
 
 const vidcont = document.getElementById('vidcontainer');
@@ -12,8 +11,6 @@ window.onload = function() {
     vidcont.style.display = 'none';
   }, 8000);
 }
-
-
 
 // below is landing page slideshow funtionality
 // Original JavaScript code by Chirp Internet: chirpinternet.eu
@@ -92,50 +89,78 @@ window.onclick = function(event) {
 
 
 
+//var modalparent = document.getElementsByClassName("modal_multi");
+
+// Get the button that opens the modal
+
+//var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+
+// Get the <span> element that closes the modal
+//var span_close_multi = document.getElementsByClassName("close_multi");
+
+// When the user clicks the button, open the modal
+//function setDataIndex() {
+
+//    for (i = 0; i < modal_btn_multi.length; i++)
+//    {
+//        modal_btn_multi[i].setAttribute('data-index', i);
+//        modalparent[i].setAttribute('data-index', i);
+//        span_close_multi[i].setAttribute('data-index', i);
+//    }
+//}
 
 
-// below is slideshow code for each production's photos
 
-const items = document.querySelectorAll('img');
-const itemCount = items.length;
-const nextItem = document.querySelector('.next');
-const previousItem = document.querySelector('.previous');
-let count = 0;
+//for (i = 0; i < modal_btn_multi.length; i++)
+//{
+//    modal_btn_multi[i].onclick = function() {
+//        var ElementIndex = this.getAttribute('data-index');
+//        modalparent[ElementIndex].style.display = "block";
+//    };
 
-function showNextItem() {
-  items[count].classList.remove('active');
+    // When the user clicks on <span> (x), close the modal
+//    span_close_multi[i].onclick = function() {
+//        var ElementIndex = this.getAttribute('data-index');
+//        modalparent[ElementIndex].style.display = "none";
+//    };
+//}
 
-  if(count < itemCount - 1) {
-    count++;
-  } else {
-    count = 0;
-  }
+//window.onload = function() {
 
-  items[count].classList.add('active');
-}
+//    setDataIndex();
+//};
 
-function showPreviousItem() {
-  items[count].classList.remove('active');
+//window.onclick = function(event) {
+//    if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+//        modalparent[event.target.getAttribute('data-index')].style.display = "none";
+//    }
 
-  if(count > 0) {
-    count--;
-  } else {
-    count = itemCount - 1;
-  }
+    // OLD CODE
+//    if (event.target === modal) {
+//        modal.style.display = "none";
+//    }
+//};
 
-  items[count].classList.add('active');
-}
+//XXXXXXXXXXXXXXXXXXXXXXX    Modified old code    XXXXXXXXXXXXXXXXXXXXXXXXXX
 
-function keyPress(e) {
-  e = e || window.event;
-  
-  if (e.keyCode == '37') {
-    showPreviousItem();
-  } else if (e.keyCode == '39') {
-    showNextItem();
-  }
-}
+// Get the modal
 
-nextItem.addEventListener('click', showNextItem);
-previousItem.addEventListener('click', showPreviousItem);
-document.addEventListener('keydown', keyPress);
+//var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+//var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+//var span = modal.getElementsByClassName("close")[0]; // Modified by dsones uk
+
+// When the user clicks on the button, open the modal
+
+//btn.onclick = function() {
+
+//    modal.style.display = "block";
+//}
+
+// When the user clicks on <span> (x), close the modal
+//span.onclick = function() {
+//    modal.style.display = "none";
+//}
