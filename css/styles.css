@@ -336,9 +336,9 @@ ul {
   border-top: 2px solid #040404;
 }
 
-.nextinfo:hover {
+/* .nextinfo:hover {
   cursor: pointer;
-}
+} */
 
 .nextphoto {
   float: right;
@@ -353,7 +353,10 @@ ul {
   display: none;
 }
 
-
+.tix-link {
+  color: #fff;
+  margin-left: 43%;
+}
 
 
 
@@ -492,7 +495,7 @@ ul {
 /* Below is styling for separate show pages */
 
 .show-container {
-  width: 75%;
+  max-width: 1275px;
   height: 900px;
   margin: 120px auto;
   display: flex;
@@ -501,7 +504,7 @@ ul {
 
 .main-image-container {
   width: 25%;
-  padding: 40px 40px 40px 0;
+  padding: 40px 20px 40px 0;
 }
 
 .main-show-image {
@@ -513,18 +516,13 @@ ul {
 .show-info {
   width: 70%;
   margin-top: 20px;
-  padding: 0 0 0 40px;
+  padding: 0 0 0 20px;
   color: var(--secondary-color);
 }
 
 .credits {
   padding: 0 12px 0 0;
   color: var(--secondary-color);
-  margin-right: 20px;
-}
-
-.credits table {
-  margin-right: 24px;
 }
 
 .credits tr td {
@@ -561,7 +559,7 @@ ul {
   object-fit: contain;
 }
 
-.show-image-container:hover {
+.trigger:hover {
   cursor: pointer;
 }
 
@@ -916,6 +914,10 @@ ul {
     display: none;
   }
 
+  #vidcontainer {
+    display: none;
+  }
+
   #landing {
     margin-bottom: 250px;
   }
@@ -962,6 +964,10 @@ ul {
     padding: 0 24px;
   }
 
+  .next-title {
+    font-size: 20px;
+  }
+
   .nexttext {
     display: none;
   }
@@ -970,12 +976,16 @@ ul {
     display: block;
   }
 
+  .tix-link {
+    margin-left: 32%;
+  }
+
   #productions h1 {
     margin-bottom: 0;
   }
 
   #productions h1 {
-    margin-top: 100px;
+    margin-top: 230px;
   }
 
   .prodgrid {
